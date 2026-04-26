@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Roboto Condensed", sans-serif;
+   cursor: default;
+}
+.container {
+   background: linear-gradient(135deg, #0f2573 0%, #266ca9 50%, #ade1fb 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   padding: 0%;
+   margin: 0%;
+   cursor: default;
+}
+
+.login-form {
+   background: white;
+   padding: 40px;
+   font-family: "Roboto Condensed", sans-serif;
+   border-radius: 15px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   max-width: 400px;
+}
+
+.form-logo {
+    display: block;         
+    margin: 0 auto 30px auto; 
+    max-width: 160px;        
+    height: auto;            
+    object-fit: contain;     
+}
+.submit-btn {
+   background: #4CAF50;
+   color: rgb(255, 255, 255);
+   width: 100%;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background 0.3s ease;
+}
+.submit-btn:hover {
+   background: #45a049;
+}
+.inputform {
+   width: 100%;
+   padding: 10px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   outline: none;
+   caret-color: #4CAF50;
+}
+
+.inputform:focus {
+   border-color: #4CAF50;
+   box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
