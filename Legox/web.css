@@ -1,0 +1,135 @@
+/* --- Base Styles --- */
+body {
+  background: repeating-linear-gradient(61deg, #0f2573 24%, #266ca9 67%, #ade1fb 52%);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 22px;
+}
+
+hr.linecolor {
+  border: 1px solid white;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes the logo to the left, and links to the right */
+  align-items: center; /* Vertically centers the logo and the text */
+  background: linear-gradient(124deg, #00e1ff 16%, #7337ae 67%);
+  padding: 10px 40px; /* Added 40px side padding so things don't touch the edges */
+}
+
+.nav-logo {
+  height: 50px; /* Keeps the logo at a nice size inside the navbar */
+  width: auto;
+  display: block;
+}
+
+.navbar ul {
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  transition: 0.3s all;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fixed invalid color from original code */
+  border-radius: 5px;
+}
+
+/* --- Typography & Text --- */
+.typography {
+  width: 75%;
+  line-height: 1em;
+  font-size: 30px;
+  text-align: left;
+  font-weight: bolder;
+  color: white;
+  padding-left: 20px;
+}
+
+.writingcolor {
+  color: white;
+  padding-left: 20px;
+}
+
+/* --- Cards Grid Layout --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; 
+  max-width: 1200px;
+  margin: 40px auto; 
+  text-align: center;
+}
+
+/* --- Individual Card (Article) --- */
+article {
+  display: flex;
+  flex-direction: column; /* Stacks image, text, and button vertically */
+  border: 1px solid #ccc;
+  padding: 15px;
+  height: 100%; /* Stretches card to match the tallest in the row */
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2); /* Slight dark tint to match the image you showed */
+}
+
+article img {
+  width: 100%;
+  height: 300px; 
+  object-fit: contain; /* Keeps image proportions correct */
+  margin-bottom: 15px;
+}
+
+article h2 {
+  color: white;
+  font-size: 24px;
+}
+
+article p {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+article button {
+  margin-top: auto; /* Forces the button to the very bottom of the card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 12px;
+  color: white;
+  background-color: #0F2573;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border: none; /* Removed default borders */
+  transition: 0.3s opacity;
+}
+
+article button:hover {
+  opacity: 0.7;
+}
